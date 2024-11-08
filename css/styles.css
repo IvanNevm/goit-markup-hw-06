@@ -520,7 +520,30 @@ button {
     margin-bottom: 64px;
     
 }
+.third-section>.container.third {
+    max-width: 584px;
 }
-.third-section > .container.third {
-    max-width: 678px;
 }
+/*============computer==================*/
+@media screen and (min-width: 1158px) {
+    .third-section {
+    padding: 120px 0;
+    max-width: 1158px;
+    }
+    .team-list-item {
+            
+    width: calc((100% - 72px) / 4);
+
+}
+    .third-section>.container.third {
+        max-width: 1158px;
+    }
+}
+
+/*==========fourthsection320================*/
+/* tablet.fourth-section {
+    padding-top: 104px;
+    padding-bottom: 96px;
+}
+    */
+    
