@@ -512,10 +512,15 @@ button {
 }
    
 .team-list {
-    gap: 24px;    
-        }
+    gap: 24px; 
+      }
+
 .team-list-item {
     width: calc((100% - 24px) / 2);
     margin-bottom: 64px;
+    
 }
+}
+.third-section > .container.third {
+    max-width: 678px;
 }
