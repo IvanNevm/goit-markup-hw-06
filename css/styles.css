@@ -197,7 +197,7 @@ button {
         }
         }
 /* ============================main=======================*/
-/* ====================================320============================*/
+/* ====================================320 first section============================*/
     .first-section {
             background-color: #2e2f42;
             border-bottom: 1px solid #e7e9fc;
@@ -254,10 +254,6 @@ button {
        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
    }
 
-
-
-
-
  /*========================tablet======================================*/
 @media screen and (min-width: 768px) {
     .first-section {
@@ -287,24 +283,41 @@ button {
     }
 }
 
-
-
-
-
-
-
-
 /*=======================computer=========================*/
-@media screen and (min-width: 1158) {
+@media screen and (min-width: 1158px) {
     .first-section {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/people-office.jpg);
-        padding: 112px 0;
+        padding: 112px 0; 
     }
-    
-}
+        .button-first {
+                display: block;
+                min-width: 169px;
+                height: 56px;
+                border: none;
+                border-radius: 4px;
+                font-family: inherit;
+                background-color: #4d5ae5;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                color: #fff;
+                margin: 0 auto;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+                background: #4d5ae5;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+            }
+        .button-first:hover,
+        .button-first:focus {
+            background-color: #404BBF;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        }
+    }
+
 @media (min-resolution: 192dpi) {
     .first-section {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -312,3 +325,103 @@ button {
                 url(../images/background-herox2.jpg);
         }
 }
+/*===============================================second section 320=========*/
+.second-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    max-width: 320px;
+    
+}
+.advantages-list {
+    display: flex;
+    flex-direction: row;
+    gap: 72px; 
+    flex-wrap: wrap;
+}
+.advantages-item {
+    width: 100%;
+    display: block;
+}
+.advantages-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 8px;
+        text-align: center;
+}
+.advantages-text {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        text-align: start;
+}
+.advicon-div {
+    display: none;
+}
+/*=======================tablet===============*/
+@media screen and (min-width: 768px) {
+    .second-section {
+        max-width: 768px;
+        padding-top: 72px;
+        padding-bottom: 0;
+    } 
+    .advantages-list {
+    gap: 24px;
+            
+    }
+    .advantages-item {
+        width: calc((100% - 24px) / 2);
+        padding-bottom: 72px;
+        padding-top: 0;
+        }
+} 
+/*==========================computer========================*/
+@media screen and (min-width: 1158px) {
+    .second-section {
+            padding: 120px 0;
+            max-width: 1158px;
+        }
+    .advantages-list {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+    }
+    .advantages-item {
+            width: calc((100% - 72px) / 4);
+            display: block;
+    }
+    .advicon-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 24px 100px;
+            width: 264px;
+            height: 112px;
+            border: 1px solid #8e8f99;
+            border-radius: 4px;
+            background-color: #f4f4fd;
+            margin-bottom: 8px;
+        }
+    .advantages-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+            margin-bottom: 8px;
+        }
+    .advantages-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
+        }
+}
+
+/*section 3 320================================*/
