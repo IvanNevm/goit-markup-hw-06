@@ -29,22 +29,61 @@
                 <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-        <button class="menu-button">
+        <button class="menu-button" data-menu-open>
             <svg class="menu-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
             </svg>
         </button>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
             <div class="container mobile-menu-container">
-                <button class="mobile-menu-close"></button>
-                <nav></nav>
-                <address></address>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <button  type="button" class="mobile-menu-close" data-menu-close>
+                <svg class="close-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-list">
+                        <li class="mobile-menu-item"><a class="mobile-list-link" href="">Studio</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-list-link" href="">Portfolio</a></li>
+                        <li class="mobile-menu-item"><a class="mobile-list-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address class="contacts-mobile">
+                    <ul class="contacts-list-mobile">
+                        <li class="contacts-item-mobile"><a class="contacts-link-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="contacts-item-mobile"><a class="contacts-link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <ul class="soclist-list-mobile">
+                    <li class="social-item-mobile">
+                        <a href="" class="social-link-mobile">
+                            <svg class="soclist-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <svg class="soclist-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <svg class="soclist-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <svg class="soclist-svg" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -448,7 +487,7 @@
     </div>
     </div>
     </footer>
-   <!----<div class="backdrop" data-modal>
+   <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="close-button" data-modal-close>
 <svg class="close-svg" width="8" height="8">
@@ -512,6 +551,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
