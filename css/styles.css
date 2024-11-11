@@ -999,7 +999,7 @@ fourth-section picture {
     border-radius: 4px;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
 }
 .backdrop:not(.is-open) .modal {
     transform: translate(-50%, -50%) scale(1.5);
@@ -1134,12 +1134,6 @@ fourth-section picture {
     display: flex;
     align-items: center;
     
-
-}
-
-.checked-icon {
-    flex-shrink: 0;
-
 }
 .span-label {
     width: 16px;
@@ -1151,6 +1145,8 @@ fourth-section picture {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    flex-shrink: 0;
+    margin-right: 8px;
     
 }
 .visually-hidden:checked+.privacy-label>.span-label {
@@ -1188,6 +1184,7 @@ fourth-section picture {
 .send-button:hover {
     background-color: #404bbf;
 }
+
 
 @media screen and (min-width: 768px) {
     .modal {
