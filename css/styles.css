@@ -993,7 +993,7 @@ fourth-section picture {
     top: 50%;
     left: 50%;
     width: 288px;
-    height: 623px;
+    max-height: 623px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
     border-radius: 4px;
@@ -1133,6 +1133,12 @@ fourth-section picture {
     color: #8e8f99;
     display: flex;
     align-items: center;
+    
+
+}
+
+.checked-icon {
+    flex-shrink: 0;
 
 }
 .span-label {
@@ -1145,6 +1151,7 @@ fourth-section picture {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    
 }
 .visually-hidden:checked+.privacy-label>.span-label {
     border: none;
@@ -1181,7 +1188,16 @@ fourth-section picture {
 .send-button:hover {
     background-color: #404bbf;
 }
-.checked-icon {
-    flex-shrink: 0;
-}
 
+@media screen and (min-width: 768px) {
+    .modal {
+    width: 408px;
+    min-height: 584px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        }
+    }
